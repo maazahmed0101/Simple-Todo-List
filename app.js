@@ -60,20 +60,7 @@ function objec(ok) {
         button.addEventListener('click', () => {
             deleting(name)
         })
-        // button1.addEventListener('click', (e) => {
-        //     let one = e.target.closest('.maxContainer')
-        //     one.classList.toggle('one')
-        //     let two = one.querySelector('.text')
-        //     let three = two.querySelector('p')
-        //     if (one.className === 'maxContainer') {
-        //         three.style.textDecoration = 'line-through'
 
-        //     } else {
-        //         three.style.textDecoration = 'none'
-
-        //     }
-
-        // })
         lowerContainer.append(maxContainer)
     })
 }
@@ -85,7 +72,11 @@ function secBtn(e) {
 objec(arr)
 function Adding(ok) {
     if (input1.value.trim() === '') {
-        // alert('kjnvf')
+         Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Enter Something First!",
+        });
         return
     }
 
