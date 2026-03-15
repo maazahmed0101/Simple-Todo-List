@@ -1,0 +1,700 @@
+Is ==> folder ke ander kya file he wo dekhata he
+example Is==> current folder ke file or folder dekhao
+
+pwd commound ==> ap abhe kiss folder me ho ye wo batata he
+matlab pwd ==> current location dekhao
+
+cd ==> folder change kerna 
+example cd Dekstop ==> dekstop folder me jao
+
+mkdir ==> naya folder banana 
+matlab mkdir test ==>test naam ka folder banao
+
+
+clear ==> terminal saaf kerna 
+matlab==> terminal screen clean hojayegi
+
+man ==> kese commound ke halp/manual dekhna
+matlab man Is ==> Is commound ke detail information dekhao
+
+1️⃣ mv
+
+Kaam: file ya folder move ya rename karna.
+
+Example:
+
+mv file.txt Desktop/
+
+➡️ file.txt ko Desktop me move kar dega.
+
+Rename example:
+
+mv file.txt newfile.txt
+
+➡️ file ka naam change ho jayega.
+
+2️⃣ chmod
+
+Kaam: file ki permission change karna.
+
+Example:
+
+chmod 777 file.sh
+
+Matlab:
+➡️ sab ko read, write, execute permission mil jati hai.
+
+3️⃣ chown
+
+Kaam: file ka owner change karna.
+
+Example:
+
+chown kali file.txt
+
+➡️ file ka owner kali user ho jayega.
+
+4️⃣ dd
+
+Kaam: data copy / disk clone karna.
+
+Example:
+
+dd if=file.iso of=/dev/sdb
+
+➡️ ISO file ko USB me copy karta hai.
+
+5️⃣ pwd
+
+Kaam: current folder location batata hai.
+
+Example:
+
+pwd
+
+Output:
+
+/home/kali
+
+➡️ aap home folder me ho.
+
+6️⃣ ps
+
+Kaam: system me running processes dikhata hai.
+
+Example:
+
+ps
+
+➡️ kaun kaun se programs chal rahe hain.
+
+7️⃣ su
+
+Kaam: user change karna.
+
+Example:
+
+su root
+
+➡️ root user me switch.
+
+8️⃣ sudo
+
+Kaam: command admin permission se run karna.
+
+Example:
+
+sudo apt update
+
+➡️ system update command admin power se chalegi.
+
+9️⃣ grep
+
+Kaam: text me search karna.
+
+Example:
+
+grep kali file.txt
+
+➡️ file me kali word search karega.
+
+🔟 ifconfig
+
+Kaam: network information dikhata hai.
+
+Example:
+
+ifconfig
+
+➡️ IP address aur network details dikhata hai.
+
+1️⃣1️⃣ apt-get
+
+Kaam: software install ya update karna.
+
+Example:
+
+sudo apt-get install nmap
+
+➡️ **Nmap install ho jayega.
+
+1️⃣2️⃣ iwconfig
+
+Kaam: WiFi settings dekhna.
+
+Example:
+
+iwconfig
+
+➡️ wireless adapter information.
+
+1️⃣3️⃣ shutdown
+
+Kaam: system band karna.
+
+Example:
+
+shutdown now
+
+➡️ computer turant band.
+
+1️⃣4️⃣ passwd
+
+Kaam: password change karna.
+
+Example:
+
+passwd
+
+➡️ user ka password change ho jayega.
+
+1️⃣5️⃣ cat
+
+Kaam: file ka content dikhana.
+
+Example:
+
+cat file.txt
+
+➡️ file ke andar kya likha hai wo dikhata hai.
+
+1️⃣6️⃣ man
+
+Kaam: command ki manual / help dekhna.
+
+Example:
+
+man ls
+
+➡️ ls command ki detail.
+
+Manual band karne ke liye:
+
+q
+
+
+
+1️⃣ cd
+
+Matlab: folder change karna.
+
+Example:
+
+cd Desktop
+
+➡️ Desktop folder me chale jao.
+
+2️⃣ mkdir
+
+Matlab: naya folder banana.
+
+Example:
+
+mkdir test
+
+➡️ test naam ka folder ban jayega.
+
+3️⃣ cp
+
+Matlab: file copy karna.
+
+Example:
+
+cp file.txt Desktop/
+
+➡️ file.txt ki copy Desktop me chali jayegi.
+
+4️⃣ mv
+
+Matlab: file move ya rename karna.
+
+Example:
+
+mv file.txt Desktop/
+
+➡️ file Desktop me chali jayegi.
+
+Rename example:
+
+mv file.txt newfile.txt
+
+➡️ file ka naam change.
+
+5️⃣ rm
+
+Matlab: file delete karna.
+
+Example:
+
+rm file.txt
+
+➡️ file delete ho jayegi.
+
+Folder delete:
+
+rm -r folder
+
+➡️ folder bhi delete.
+
+6️⃣ grep
+
+Matlab: text me search karna.
+
+Example:
+
+grep kali file.txt
+
+➡️ file me kali word dhundega.
+
+7️⃣ cat
+
+Matlab: file ka content dikhana.
+
+Example:
+
+cat file.txt
+
+➡️ file ke andar jo likha hai wo terminal me dikh jayega.
+
+✅ Sab se simple summary Don Bhai😡:
+
+Command	Kaam
+cd	folder change
+mkdir	folder banana
+cp	file copy
+mv	move / rename
+rm	delete
+grep	search
+cat	file dekhna
+
+
+
+pwd → current folder dikhata hai
+
+cd → folder change karta hai
+
+mkdir → naya folder banata hai
+
+ls -l → files aur folders ki detail list
+
+
+“long format” – ye ls command ke saath use hota hai aur extra details dikhata hai, sirf file/folder ke naam ke bajaye.
+
+Example:
+
+Command:
+
+ls -l
+
+Output (example):
+
+drwxr-xr-x 2 kali kali 4096 Apr 10 14:51 Desktop
+-rw-r--r-- 1 kali kali  142 Apr 10 14:51 file.txt
+Explanation of columns:
+
+drwxr-xr-x → permissions (kaun read/write/execute kar sakta hai)
+
+2 → number of links
+
+kali → owner
+
+kali → group
+
+4096 → file/folder size (bytes)
+
+Apr 10 14:51 → creation/modification date
+
+Desktop / file.txt → file/folder name
+
+✅ Short me:
+-l = detailed information display
+
+Without -l:
+
+ls
+
+Sirf file/folder ke naam dikhenge.
+
+With -l:
+
+ls -l
+
+File/folder ke permissions, owner, size, date aur name sab dikhega.
+
+
+Don Bhai😡, chalo main aapko ye lambi line step by step detail me samjhata hoon:
+
+Line jo aap ne di:
+
+drwxr-xr-x 2 kali kali 4096 Apr 10 14:51 Downloads
+
+Ye ls -l ka output hai, jo directory aur file ke bare me poori detail deta hai.
+
+1️⃣ drwxr-xr-x → Permissions
+
+d → iska matlab hai ye directory hai
+
+Agar file hoti → - dikhata
+
+rwx (owner ke liye) → owner (yaha kali) ke liye read, write, execute permissions
+
+r-x (group ke liye) → group ke users ke liye read aur execute, write nahi
+
+r-x (others ke liye) → baaki sab ke liye read aur execute, write nahi
+
+Shortcut:
+
+r = read (dekh sakte ho)
+
+w = write (edit / delete kar sakte ho)
+
+x = execute (folder me enter kar sakte ho / file run kar sakte ho)
+
+2️⃣ 2 → Number of links
+
+Ye directory ke links ya subfolders ko represent karta hai.
+
+Directory me . aur .. links included hote hain.
+
+3️⃣ kali → Owner
+
+Ye folder ka owner user hai, jo yaha kali hai.
+
+4️⃣ kali → Group
+
+Ye folder ka group hai, jo yaha bhi kali hai.
+
+Group ke users ke permissions r-x set hai.
+
+5️⃣ 4096 → File size (bytes)
+
+Directory ka size 4096 bytes hai (Linux me har folder ka default block size 4KB hota hai)
+
+6️⃣ Apr 10 14:51 → Last modification date & time
+
+Folder last kab modify hua ye dikhata hai.
+
+7️⃣ Downloads → Folder name
+
+Ye actual folder ka naam hai.
+
+✅ Summary (Simplified)
+Field	Matlab
+d	Directory
+rwxr-xr-x	Permissions (owner/group/others)
+2	Number of links
+kali	Owner
+kali	Group
+4096	Size in bytes
+Apr 10 14:51	Last modified date & time
+Downloads	Folder name
+
+Matlab: Ye lambi line aapko folder ka full status batati hai: kaun use kar sakta hai, owner kaun hai, size kya hai, last kab change hua, aur folder ka naam
+
+
+[kali@kali ~]$ me tilde ~ ka matlab
+
+~ ka matlab hai current user ka home directory
+
+Is example me user kali hai, aur uska home folder:
+
+/home/kali
+
+Jab aap terminal me likhte ho:
+
+cd /home/kali/kali_folder3
+
+➡️ Ab current working directory ho gaya:
+
+/home/kali/kali_folder3
+
+Shortcut:
+
+~ likhne se aap hamesha apne home folder me quickly ja sakte ho.
+
+cd ~   # home folder
+cd ~/kali_folder3   # home ke andar folder3
+2️⃣ $ aur # ka matlab
+
+$ → normal user ke liye prompt
+
+# → root user ya elevated privilege ke liye prompt
+
+Example:
+
+[kali@kali ~]$ pwd
+/home/kali
+
+Yahaan $ matlab aap normal user ho
+
+[root@kali ~]# pwd
+/home/kali
+
+Yahaan # matlab aap root user ho, sab commands kar sakte ho
+
+3️⃣ Terminal prompt customize ho sakta hai
+
+Linux me prompt me ye symbols aur user/folder info badal bhi sakte hain
+
+Example: [user@hostname folder]$ ye common hai, lekin aap apne hisaab se change kar sakte ho
+
+Lekin concept same rehta hai:
+
+user ka naam
+
+machine ka naam
+
+current folder
+
+symbol ($ ya #)
+
+✅ Short me:
+Symbol / Part	Matlab
+~	current user ka home directory
+$	regular user
+#	root / elevated user
+[user@host folder]	prompt ka standard format, customizable
+
+Don Bhai😡, agar chaho to mai aapko terminal prompt ka ek visual diagram + shortcuts bana ke dikha doon, jisme $, #, ~, [user@host folder] sab clearly samjhaya ho.
+
+Kya mai bana doon?
+
+kese regular $ or # iss ka concept samjao me pure beginner ho
+
+Don Bhai😡, chalo main bilkul beginner level se step by step samjhata hoon $ aur # ka concept Linux me. Ye aapko hamesha yaad rahega.
+
+1️⃣ Terminal prompt kya hota hai?
+
+Jab aap Linux me terminal kholte ho, top pe kuch likha hota hai, jise prompt kehte hain.
+
+Example:
+
+[kali@kali ~]$
+
+Ye batata hai aap kaun ho, kaunse system pe ho, aur kaunse folder me ho.
+
+2️⃣ $ ka matlab
+
+$ ka matlab hai aap normal user ho.
+
+Normal user = wo user jise system ke basic permissions hain.
+
+Aap files create/delete kar sakte ho jo aapke folder me hain
+
+Lekin system files (root ke folders) me changes nahi kar sakte
+
+Example:
+
+[kali@kali ~]$ pwd
+/home/kali
+
+Yahaan kali normal user hai
+
+$ ka matlab hai limited permissions
+
+3️⃣ # ka matlab
+
+# ka matlab hai root user (superuser)
+
+Root = system ka master user, jise sab permissions hain
+
+Files delete kar sakta hai system me
+
+Software install/uninstall kar sakta hai
+
+System settings change kar sakta hai
+
+Example:
+
+[root@kali ~]# pwd
+/home/kali
+
+Yahaan root ka username hai
+
+# ka matlab hai full power, sab kuch kar sakta hai
+
+4️⃣ Regular vs Root
+Symbol	User Type	Permissions Example
+$	Regular user	Home folder me files edit kar sakta, system me nahi
+#	Root / superuser	System ke sab files edit kar sakta, full control
+5️⃣ Summary concept
+
+$ → normal user → safe, limited permissions
+
+# → root user → full control → careful use karo, galti se system break ho sakta hai
+
+Terminal prompt ka symbol hamesha batata hai kaun sa user currently active hai
+
+
+awal 1️⃣: What happens when you type cd .?
+
+Jawab:
+
+cd . command current folder ko hi point karta hai
+
+Koi directory change nahi hota
+
+Matlab terminal me aap abhi bhi /home/kali/kali_folder3 me ho
+
+Sawal 2️⃣: What happens when you type cd .. from /home/kali/kali_folder3?
+
+Jawab:
+
+.. matlab parent directory
+
+Ek level upar jaata hai
+
+/home/kali/kali_folder3 → parent /home/kali
+
+Terminal ab /home/kali me ho jaayega
+
+Sawal 3️⃣: What happens when you type cd ~?
+
+Jawab:
+
+~ → current user ka home directory
+
+Aap ka current folder chahe kuch bhi ho, cd ~ aapko /home/kali me le aata hai
+
+Agar chaho Don Bhai😡, mai ye poora concept ek diagram ke saath visual bana doon jisme
+
+current folder (.)
+
+parent folder (..)
+
+home folder (~)
+sab dikh raha ho, aur aapko easily yaad rahe.
+
+Chahte ho mai bana doon?
+
+1️⃣ cd .. from /home/kali/kali_folder3
+
+Question: What happens?
+Answer:
+
+.. matlab parent directory
+
+/home/kali/kali_folder3 ka parent /home/kali hai
+
+Terminal ab /home/kali me ho jaayega
+
+2️⃣ cd .. from /home/kali
+
+Question: What would be the current directory?
+Answer:
+
+Parent of /home/kali → /home
+
+Terminal ab /home me ho jaayega
+
+3️⃣ cd .. from /home
+
+Question: What would be the current directory?
+Answer:
+
+Parent of /home → / (root directory)
+
+Terminal ab / me ho jaayega
+
+4️⃣ cd ~
+
+Question: Where are you?
+Answer:
+
+~ → current user ka home folder
+
+Terminal ab /home/kali me ho jaayega
+
+5️⃣ Redirect output with >
+
+Question: No output was shown. Is that expected?
+Answer:
+
+Haan, expected hai
+
+> operator ne output ko screen ki jagah file (text_file.txt) me send kar diya
+
+Agar file exist nahi thi, to automatically create ho gayi
+
+6️⃣ Append output with >>
+
+Question: What happened to the text file?
+Answer:
+
+Purana content delete nahi hua, naya content end me add ho gaya
+
+Matlab file ke andar dono messages ab stored hain
+
+7️⃣ Remove file rm text_file.txt
+
+Question: What happens?
+Answer:
+
+File text_file.txt delete ho gayi
+
+ls command se check kar sakte ho, file wahan nahi hogi
+
+8️⃣ Remove directory rm -r kali_folder1
+
+Answer:
+
+Directory kali_folder1 aur uske andar jo bhi files/folders hain sab delete ho gaye
+
+9️⃣ Move file with mv
+
+Command:
+
+mv kali_folder2/text_file.txt .
+
+Question: Why was the dot . used?
+Answer:
+
+. → current directory
+
+Matlab file text_file.txt ko current folder me move kar diya
+
+🔟 Move directory with mv
+
+Command:
+
+mv kali_folder3/ kali_folder2/
+
+Answer:
+
+kali_folder3 aur uske andar jo bhi files/folders hain → move ho gaye inside kali_folder2
+
+11️⃣ Verify with ls -l kali_folder2/
+
+Dekhne se pata chalta hai ki kali_folder3 successfully move ho gaya hai
+
+12️⃣ Reflection / Learn more
+
+Answer:
+
+man <command> → command ka manual dekho
+
+--help option → example:
+
+ls --help
+
+Practice regularly, directory navigation aur file operations ke liye

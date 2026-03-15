@@ -1,63 +1,123 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
+    /* width: 100%; */
+    user-select: none;
 }
-html,body{
+
+html,
+body {
     width: 100%;
     height: 100%;
-    background:linear-gradient(to left,skyblue,aqua,lightblue,skyblue,aqua,lightblue,skyblue,aqua,lightblue);
 }
-.container{
+
+.container {
+    width: 100%;
+    max-width: 25rem;
+    background-color: orange;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+}
+
+.container .uperContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.container .uperContainer .item1 {
+    width: 100%;
+}
+
+.container .uperContainer .item1 .input1 {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid brown;
+    height: 1.3rem;
+    margin-top: 12px;
+}
+
+.container .uperContainer .item2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+    gap: 3px;
+}
+
+.container .uperContainer .item2 .input2 {
+    width: 100%;
+    height: 1.3rem;
+    border-radius: 4px;
+    border: 1px solid brown;
+}
+
+.container .uperContainer .item2 button {
+
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: 1rem;
+    background-color: pink;
+    width: 40px;
+    border: 1px solid black;
+}
+
+.container .lowerContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+}
+.container .lowerContainer .maxContainer .Btn{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    gap: 4px;
     /* background-color: red; */
-    max-width: 35rem;
+}
+.container .lowerContainer .maxContainer .Btn .Button1{
+    width: 100%;
+    background-color: skyblue;
+    border: 1px solid blue;
+}
+.container .lowerContainer .maxContainer .Btn .Button2{
+    background-color: rgba(255, 80, 80, 0.847);
+    border: 1px solid rgb(255, 0, 0);
+}
+.container .lowerContainer .maxContainer{
+    display: flex;
+    gap: 10px;
+    background-color: #ffffff69;
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 10px black;
-    margin: 50px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 30px 10px;
-}
-.addContainer{
-    display: flex;
-    width: 100%;
-    gap: 10px;
-}
-.addContainer > input{
-    padding: 10px;
-    width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.29);
-    border-radius: 5px;
-}
-.addContainer > button{
-    padding: 0 10px;
-    background-color: aqua;
-    border-radius: 5px;
-    border: none;
-    transition: all linear 0.2s;
-}
-.addContainer > button:active{
-    scale: 0.9;
-}
-.ListContainer .list{
-    width: 100%;
-    display: flex;
+    padding: 4px 6px;
     align-items: center;
     justify-content: space-between;
-    background:linear-gradient(to top,orange,red);
-    padding: 12px;
-    border-radius: 5px;
 }
-.ListContainer{
+.container .lowerContainer .maxContainer .image img{
     width: 100%;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    
 }
-.ListContainer .deleteBtn{
-    padding: 5px;
+.container .lowerContainer .maxContainer .image{
+    aspect-ratio: 1/1;
+    /* object-position: center; */
+    width: 3rem;
+    overflow: hidden;
+    height: 3rem;
+}
+.lineThrough{
+    text-decoration: line-through;
 }
